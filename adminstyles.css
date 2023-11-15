@@ -1,0 +1,126 @@
+.main2p5 button{
+    min-height: 32px;
+    min-width: 95px;
+    border-radius: 15px;
+    border-color: black;
+    color: rgb(49, 243, 6);
+    background-color: rgb(12, 11, 11);
+    box-shadow: 1px 1px rgb(195, 28, 28);
+    margin-top: 35px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    left: 50%;
+}
+
+p, a{
+    color: rgb(0, 255, 60);
+    text-decoration: none;
+}
+
+#p2{
+    margin-left: 15px;
+    font-size:xx-large;
+    text-shadow: 1px 1px rgb(105, 230, 10);
+}
+
+.optionimage img:hover{
+    filter:invert(100%);
+}
+
+#ul1{
+    margin-left: 15px;
+    padding:0;
+}
+.optionimage{
+    height: 30px;
+    width: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.optionimage a{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+#minipfp{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 2px solid black;
+    ;
+}
+.pfp{
+    height: 75px;
+    width: 75px;
+    border: 2px solid red;
+    border-color: rgb(7, 8, 7);
+    border-radius: 50px;
+    margin-right: 15px;
+    margin-bottom: 50px;
+}
+
+.main2p5 .optionimage:hover{
+    filter:invert(100%);
+}
+.contents:hover{
+    transition-duration: 1s;
+    transform: scale(101%);
+}
+.contento, .contento img{
+    background: none;
+    box-shadow: none;
+    border: none;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    right: 10px;
+    top: 5px;
+    text-overflow: ellipsis;
+}
+
+
+.contento>img:hover{
+    filter:invert(100%);
+ }
+ .contents p{
+     color: black;
+     text-overflow:clip;
+ }
+#box2 p{
+    color: black;
+}
+.heading{
+    padding: none;
+    margin: 0px;
+    margin-top: 15px;
+    margin-bottom: 2px;
+    font-size: 20px;
+}
+
+.trendu{
+    columns: 1;
+    padding: 7px;
+    row-gap: 10px;
+}
+.trendt p{
+    color: rgb(119, 112, 112);
+    padding-bottom: 5px;
+}
+.trendt a{
+    color: black;
+}
+.trendt{
+    columns: 1;
+    padding: 0px;
+}
+
+.userdesc .userlink{
+    padding: 0px;
+    margin: 0px;
+}
+
+#contents::-webkit-scrollbar {
+    display: none;
+  }

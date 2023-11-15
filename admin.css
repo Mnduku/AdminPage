@@ -1,11 +1,7 @@
 
-p, a{
-    color: rgb(0, 255, 60);
-    text-decoration: none;
-    
-}
 
 body{
+    overflow: hidden;
     height: 100vh;
     width: 100vw;
     display: grid;
@@ -15,7 +11,7 @@ body{
     column-gap: 0px;
     row-gap: 0px;
     background-color: black;
-    padding: 0%;
+    padding: none;
 }
 #main1{
     background-color: rgb(21, 20, 20);
@@ -26,36 +22,14 @@ body{
     grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 6;
-    margin: 0;
+    margin: none;
+    padding: none;
     display: flex;
     flex-direction: column;
 }
 
-#p2{
-    margin-left: 15px;
-    font-size:xx-large;
-    text-shadow: 1px 1px rgb(105, 230, 10);
-}
-
-#ul1{
-    margin-left: 15px;
-    padding:0;
-}
-.optionimage{
-    height: 30px;
-    width: 30px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-}
-.optionimage a{
-    margin-left: 10px;
-    margin-top: 5px;
-}
-
-
 #main2{
-    padding-top: 35px;
+    padding-top: 10px;
     background-color: rgb(41, 43, 43);
     grid-column-start: 2;
     grid-column-end: 6;
@@ -65,32 +39,30 @@ body{
     min-height: 150px;
     display: flex;
     flex-direction: column;
+    flex:1 1 auto;
+    position: relative;
     
 }
 .main2p5{
-    width: 50%;
+    width: 100%;
     margin-top: 7px;
     margin-left: 50px;
     display: flex;
     flex-direction: row;
-    align-items:flex-start
+    flex:1 1 auto;
+    align-items:flex-start;
 
 }
-.main2p5 button{
-    min-height: 32px;
-    min-width: 95px;
-    border-radius: 15px;
-    border-color: black;
-    color: rgb(49, 243, 6);
-    background-color: rgb(12, 11, 11);
-    box-shadow: 1px 1px rgb(195, 28, 28);
-    margin-top: 35px;
-    margin-left: 10px;
-    margin-right: 10px;
 
-
+.h4{
+    flex:1 1 auto;
+    position: absolute;
+    left: 60%;
+    display: flex;
+    align-items: end;
+    padding-left: 10vw;
+}
     
-}
 #area{
     resize: none;
     border: none;
@@ -103,21 +75,11 @@ body{
     padding-left: 10px;
     font-size: 15px;
     border-radius: 20px;
-    width: 600px;
+    width: 50%;
     height: 1.5em;
     margin-left: 5px;
     
 }
-.pfp{
-    height: 75px;
-    width: 75px;
-    border: 2px solid red;
-    border-color: rgb(7, 8, 7);
-    border-radius: 50px;
-    margin-right: 15px;
-    margin-bottom: 50px;
-}
-
 
 #main3{
     grid-column-start: 2;
@@ -126,32 +88,36 @@ body{
     grid-row-end: 6;
     background-color: rgb(96, 97, 96);
     display: flex;
+    flex: 1 1 auto;
     flex-direction: row;
     justify-content:baseline;
     overflow: hidden;
 }
 #holder{
-    min-width: 660px;
+
     margin-bottom: 0;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 80%;
 
 }
 
 #contents{
     height: 100%;
     min-height: 500px;
+    min-width: 800px;
     margin-left: 50px;
     display: grid;
     resize: none;
-    overflow: auto;
     grid-template-columns: 22% 22% 22%;
     grid-template-rows: 22% 22% 22%;
-    column-gap: clamp(80px,6vw,10vw);
-    row-gap: clamp(20px,3vw,4vw);
-    padding-right: 40px;
+    column-gap: clamp(80px,11%,50%);
+    row-gap: clamp(10vh,20%,6vw);
+   
 
 }
+
 #holder p{
     margin-left: 50px;
     margin-bottom: 50px;
@@ -161,35 +127,68 @@ body{
 }
 #contents .contents{
     background-color: aliceblue;
-    width: clamp(175px, 17vw, 500px);
-    height: clamp(125px, 10vw, 13vw);
+    width: clamp(160px, 20vw, 650px);
+    height: clamp(25vh, 80vw, 50%);
     border: 2px solid rgb(239, 19, 19);
     border-radius: 17px;
-    box-shadow: 2px 3px black;
+    box-shadow: 2px 2px black;
+    background-color: rgb(249, 249, 249);
+    display: flex;
+    align-items:end;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border;
+    text-overflow:ellipsis
+}
+
+.colorb{
+    position: absolute;
+    background-image: linear-gradient(red,black,red);
+    height: 100%;
+    width: 6%;
+    right: 95%;
+    bottom: 0%;
+    border-radius: 50px 0px 0px 50px;
+    
+    
 }
 .sides{
-    width: 100%;
-    height: 100%;
-    min-width: 300px;
+    width: 70%;
+    height: 89%;
+    min-width: 500px;
     display: flex;
     flex-direction: column;
-    max-width: 350px;
     background-color: rgb(28, 27, 28);
-   
+    padding: none;
+    background-color: rgb(96, 97, 96);
+    flex: 1 1 auto;
+
+    
 
 }
 #box2{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
+    height: 34%;
+    width: 48%;
+    border-radius: 20px;
+    margin: 0;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 10px;
+    flex: 1 1 auto;
 
 }
-#contents::-webkit-scrollbar {
-    display: none;
-  }
 
-@media only screen and (max-width: 560) {
-    .sides {
-      display: none;
-      width: 0%;
-      height: 0%;
-    }
+#box3{
+    background-color: rgb(255, 255, 255);
+    height: 40%;
+    width: 48%;
+    border-radius: 20px;
+    margin: 0;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
 }
