@@ -5,7 +5,7 @@
     border-color: black;
     color: rgb(49, 243, 6);
     background-color: rgb(12, 11, 11);
-    box-shadow: 1px 1px rgb(195, 28, 28);
+    box-shadow: 0px 2px 5px rgb(0, 0, 0);
     margin-top: 35px;
     margin-left: 10px;
     margin-right: 10px;
@@ -13,15 +13,26 @@
     left: 50%;
 }
 
+#logo{
+    height: 50px;
+    width: 50px;
+
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+}
 p, a{
     color: rgb(0, 255, 60);
     text-decoration: none;
 }
 
 #p2{
-    margin-left: 15px;
     font-size:xx-large;
     text-shadow: 1px 1px rgb(105, 230, 10);
+    text-align: center;
 }
 
 .optionimage img:hover{
@@ -29,19 +40,23 @@ p, a{
 }
 
 #ul1{
-    margin-left: 15px;
+    margin-left: 10px;
     padding:0;
 }
 .optionimage{
     height: 30px;
     width: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     display: flex;
     flex-direction: row;
 }
 .optionimage a{
     margin-left: 10px;
-    margin-top: 5px;
+    margin-top: 35px;
+    text-align: start;
+}
+.optionimage .optionlink{
+    margin-top: 43px;
 }
 
 #minipfp{
@@ -65,7 +80,7 @@ p, a{
     filter:invert(100%);
 }
 .contents:hover{
-    transition-duration: 1s;
+    transition-duration: 0.5s;
     transform: scale(101%);
 }
 .contento, .contento img{
@@ -88,15 +103,27 @@ p, a{
      color: black;
      text-overflow:clip;
  }
+ .colorb{
+    position: absolute;
+    background-image: linear-gradient(rgb(16, 15, 15),rgb(5, 5, 5),rgb(32, 228, 6));
+    height: 100.5%;
+    width: 6%;
+    right: 95%;
+    bottom: 0%;
+    border-radius: 50px 0px 0px 50px;
+    
+    
+}
 #box2 p{
     color: black;
+
 }
 .heading{
     padding: none;
     margin: 0px;
     margin-top: 15px;
-    margin-bottom: 2px;
-    font-size: 20px;
+    margin-bottom: 10px;
+    font-size: 24px;
 }
 
 .trendu{

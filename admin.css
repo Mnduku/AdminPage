@@ -26,6 +26,8 @@ body{
     padding: none;
     display: flex;
     flex-direction: column;
+    box-shadow: 0px 2px 5px rgb(16, 16, 16);
+
 }
 
 #main2{
@@ -41,6 +43,8 @@ body{
     flex-direction: column;
     flex:1 1 auto;
     position: relative;
+    box-shadow: 0px 2px 10px black;
+
     
 }
 .main2p5{
@@ -92,6 +96,8 @@ body{
     flex-direction: row;
     justify-content:baseline;
     overflow: hidden;
+    box-shadow: 0px 2px 5px black;
+
 }
 #holder{
 
@@ -129,9 +135,9 @@ body{
     background-color: aliceblue;
     width: clamp(160px, 20vw, 650px);
     height: clamp(25vh, 80vw, 50%);
-    border: 2px solid rgb(239, 19, 19);
+    border: 2px solid rgb(32, 32, 32);
     border-radius: 17px;
-    box-shadow: 2px 2px black;
+    box-shadow: 0px 2px 5px black;
     background-color: rgb(249, 249, 249);
     display: flex;
     align-items:end;
@@ -141,17 +147,7 @@ body{
     text-overflow:ellipsis
 }
 
-.colorb{
-    position: absolute;
-    background-image: linear-gradient(red,black,red);
-    height: 100%;
-    width: 6%;
-    right: 95%;
-    bottom: 0%;
-    border-radius: 50px 0px 0px 50px;
-    
-    
-}
+
 .sides{
     width: 70%;
     height: 89%;
@@ -170,25 +166,26 @@ body{
     background-color: rgb(255, 255, 255);
     height: 34%;
     width: 48%;
-    border-radius: 20px;
+    border-radius: 12px;
     margin: 0;
-    border: 1px solid red;
+    border: 1px solid rgb(24, 23, 23);
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     padding-left: 10px;
+    padding-right: 10px;
     flex: 1 1 auto;
+    box-shadow: 0px 2px 5px black;
+
 
 }
 
 #box3{
     background-color: rgb(255, 255, 255);
-    height: 40%;
-    width: 48%;
-    border-radius: 20px;
+    width: 50%;
+    border-radius: 12px;
     margin: 0;
-    border: 1px solid red;
+    border: 1px solid rgb(7, 7, 7);
     display: flex;
     flex-direction: row;
-    padding-bottom: 10px;
+    box-shadow: 0px 2px 5px black;
 }
